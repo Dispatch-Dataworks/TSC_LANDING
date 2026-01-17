@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Townsend Consulting Services — Now Dispatch Dataworks LLC</title>
+    <meta name="description" content="Townsend Consulting Services has evolved into Dispatch Dataworks LLC. Learn more about our modern software platforms, data-driven systems, and community-focused applications." />
+    <style>
+        :root{--bg:#0f1720;--card:#0b1220;--accent:#06b6d4;--muted:#9ca3af;--white:#ffffff}
+        html,body{height:100%}
+
+        /* Mobile-first defaults */
+        body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;color:var(--white);background:linear-gradient(180deg,#071023 0%, #071829 100%);display:flex;align-items:center;justify-content:center;padding:18px}
+        .card{width:100%;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.04);padding:20px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+        header{display:flex;flex-direction:column;align-items:center;gap:12px;margin-bottom:14px;text-align:center}
+        header .logo{margin-bottom:12px}
+        .logo{width:64px;height:64px;display:inline-grid;place-items:center;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7c3aed);font-weight:700;color:#042026}
+        h1{margin:0;font-size:1.1rem}
+        p{margin:12px 0;color:var(--muted);line-height:1.5}
+        .cta{display:flex;justify-content:center;gap:10px;align-items:center;margin-top:16px}
+        .hero-gif{display:block;width:100%;max-width:100%;margin:16px auto;border-radius:8px;object-fit:contain}
+        .hero-link{display:block;text-align:center}
+        .btn{background:var(--accent);color:#042026;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600;border:0}
+        .secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);padding:8px 12px;border-radius:8px;text-decoration:none}
+        footer{margin-top:18px;color:var(--muted);font-size:0.9rem}
+
+        /* Larger screens */
+        @media (min-width:601px){
+            body{padding:32px}
+            .card{max-width:880px;padding:36px}
+            header{flex-direction:row;gap:16px;margin-bottom:18px;text-align:left;align-items:center}
+            header .logo{margin-bottom:0}
+            .logo{width:96px;height:96px}
+            h1{font-size:1.4rem}
+            .hero-gif{width:75%;margin:16px auto}
+            footer{margin-top:22px}
+        }
+    </style>
+</head>
+<body>
+    <main class="card" role="main">
+        <header>
+            <img class="logo" src="logo_mark.png" alt="Dispatch Dataworks logo" aria-hidden="true">
+            <div>
+                <h1>Townsend Consulting Services has evolved into Dispatch Dataworks LLC</h1>
+                <div style="color:var(--muted);font-size:0.95rem">Founded by Benjamin Townsend — same practical, client-focused approach with an expanded focus on modern platforms, performance, reliability, and long-term system design.</div>
+            </div>
+        </header>
+
+        <section>
+            <p>
+                After more than 20 years of providing consulting, software, and web-based solutions, our work has expanded well beyond traditional website design.
+                To better reflect the scope of what we build and support today—software platforms, data-driven systems, and community-focused applications—we’ve transitioned to Dispatch Dataworks LLC.
+            </p>
+
+            <div class="cta">
+                <a class="btn" href="https://dispatchdataworks.com" rel="noopener">Visit Dispatch Dataworks</a>
+            </div>
+
+            <a class="hero-link" href="https://dispatchdataworks.com" rel="noopener">
+                <img class="hero-gif" src="Logo_Morphing.gif" alt="Dispatch Dataworks — logo animation">
+            </a>
+
+            <footer>
+                <div>© <span id="year"></span> Dispatch Dataworks LLC. All rights reserved.</div>
+            </footer>
+        </section>
+    </main>
+
+    <script>
+        // fill dynamic year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
